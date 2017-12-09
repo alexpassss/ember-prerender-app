@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+    this.route('sitemap-txt', { path: 'sitemap.txt' }); // Required by ember-cli-prerender
+    this.route('sitemap-xml', { path: 'sitemap.xml' }); // Optional
 });
 
 export default Router;

@@ -13,7 +13,9 @@
   "scripts": {
     "build": "ember build",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "postbuild": "ember prerender",
+    "start-prerendered": "static-server dist"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -26,6 +28,7 @@
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-prerender": "^1.2.15",
     "ember-cli-qunit": "^4.1.1",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
